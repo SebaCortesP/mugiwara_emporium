@@ -43,7 +43,9 @@
         <h1 class="site-subtitle">Registro</h1>
       </div>
     </header>
-
+    <div class="main-nav" style="background-color: #efa123; height: 30px">
+      <div class="nav-logo"></div>
+    </div>
     <!-- Cuerpo -->
     <main class="categories">
       <form
@@ -84,10 +86,10 @@
           <div class="col-md-6">
             <label for="email" class="form-label">Correo Electrónico</label>
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="email"
-              placeholder="ejemplo@correo.com"
+              placeholder="ejemplo@correo.com"  
             />
           </div>
         </div>
@@ -115,15 +117,32 @@
             />
           </div>
         </div>
-
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <label for="direccion" class="form-label">Direccion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              placeholder="direccion"
+            />
+          </div>
+        </div>
         <!-- Botón -->
         <div class="text-center">
           <button type="submit" class="btn btn-lg submit-btn">
             <span> Comenzar Registro </span>
           </button>
+          <button type="button" id="btnLimpiar" class="btn btn-lg  btn-secondary secondary-btn">
+            Limpiar
+          </button>
         </div>
       </form>
+      <div id="formAlert" class="alert d-none" role="alert"></div>
     </main>
+    <div class="main-nav" style="background-color: #efa123; height: 30px">
+      <div class="nav-logo"></div>
+    </div>
     <footer class="site-footer">
       <div class="footer-content">
         <p><strong>Dirección:</strong> Av. Grand Line 666, Ciudad del Tesoro</p>
